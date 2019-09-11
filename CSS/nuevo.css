@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#navegacion {
+
+    height: 50px;
+    background-color: black;
+    color: white;
+
+}
+#slider{
+
+    height: 150px;
+    background-color: aquamarine;
+}
+
+#servicios{
+
+    height: 120px;
+    background-color: blue;
+}
+
+#pie{
+    height: 50px;
+    background-color: bisque;
+}
+.servicios {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    border-radius: 50%;
+}
+
+.otro_contenido > p {
+    background-color: aquamarine;
+    padding: 5px;
+    
+}
+
+.otro_contenido >p > span {
+    background-color: brown;
+    padding: 5px;
+    margin-top: 10px;
+
+}
+
+a > strong{
+    color : red;
+    background-color: black;
+    padding: 10px;
+}
+
+p > span{
+    color: bisque;
+    background-color: chocolate;
+    
+}
+
+div + p {
+    color: chartreuse;
+}
+
+.otro_contenido -p {
+    color: darkblue;
+}
+
+h3  a {
+    font-size: 45px;
+}

@@ -1,0 +1,84 @@
+cd /me voy a la raiz del pc
+ruta para abrir mysql a traves de comandos
+C:\xampp\mysql\bin> mysql -u root -p
+
+//base de datos
+show databases; muestra base de datos
+drop database nombre de la tabla ; borra la tabla
+create database nombre de la tabla; crea la tabla
+use nombre de la tabla; accedo dentro de la tabla
+select * from nombre de la tabla le realizo una consulta primero debo acceder  a ella;
+
+//Usuarios
+
+select *from mysql(base de datos).user(tabla) \G; consultado los usuarios de mysql
+
+create user coke@localhost identified by 'coketo'; creacion de usuario sin privilegios
+ drop user coke@localhost; eliminacion de un usuario
+
+//Asignar privilegios
+
+Grant privilegio
+on base.tabla para seleccionar todas *.*
+to cuenta@localhost identified by 'password';
+grant all privileges on *.* to coke@localhost; otorgar todos los privilegios al usuario 
+
+//Tablas
+
+create table nombre de la tabla (atributos not null, auto_increment , unsigned)
+
+ejemplo
+
+create table personas(
+    id varchar(25) not null,  
+    nombre varchar(15) not null,
+    apellido varchar(12) not null,
+    edad tinyint not null,
+    ciudad varchar(20) not null,
+    pais varchar(20) not null
+)
+
+tabla creado pero quiero modificar agregar o eliminar atributos
+
+alter table persona rut integer not null after apellido; agregar un atributo
+ 
+alter table personas modify id integer; modificar un tipo d eun campo
+
+alter table add primary key(id); defino mi primary key
+
+alter table change id otrocampo a cambiar o el mismo en este caso sera id not null auto_increment primary key;
+
+--Crud
+Insersion de registros y consultarlos
+
+ejemplo de una insercion
+insert into nombre de la tabla(atributos)  values (valores de estos)
+insert into personas (id , nombre , apellido , rut , edad , ciudad, pais) values (null ,'jorge' , 'valdes' , '1910487', '24' , 'talca' , 'chile');
+
+insert into personas values (null ,'jorge' , 'valdes' , '1910487', '24' , 'talca' , 'chile');
+
+Obtener informacion de la base de datos se obtiene con el comando select
+
+select *from nombre de la tabla; obtengo toda informacion de esta con todas las columnas
+select * from personas;
+select nombre from personas; solamente obtengo el campo nombre
+select nombre , ciudad from personas; obtengo el nombre y la ciudad tiene que estar en orden si no dara error
+
+Actualizacion 
+
+UPDATE nombre de la tabla set nombre de la columna = 'valor que quiero colocarle' where nombre de la columna = 'valor actual';
+update personas set nombre = 'ignacio' where nombre = 'jorge'; cambio de nombre 
+
+modificar para varias registros de personas por ejemplo de ciudad
+
+update personas set ciudad = 'talca' where ciudad = 'madrid'; en todos los registros de la base de datos personas las personas que tenga ciudad talca se cambiara a madrid
+
+borrar registros 
+
+delete from nombre de la tabla;
+delete from personas; en este caso
+
+3 tipos 
+drop 
+delete 
+TRUNCATE

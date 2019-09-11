@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fomrulario 3</title>
+</head>
+<body>
+    <h1>fomrulario3</h1>
+    <form oninput="multiplicacion()">
+        <label for="">Calculadora de multiplicacion</label> <br>
+        <input id="numero1" type="number" step="any">
+         <input id="numero2" type="number" step="any"> =
+        <output id="resultado" name="resultado" for="numero1 numero2"></output>
+    </form>
+
+    <script>
+        
+        document.getElementById('formu').addEventListener('input', multiplicacion);
+        
+        function multiplicacion() {
+            var numero1 = document.getElementById('numero1').value;
+            var numero2 = document.getElementById('numero2').value;
+
+            var resultado = numero1 * numero2;
+
+            document.getElementById('resultado').value = resultado;
+
+        }
+    
+    </script>
+</body>
+</html>

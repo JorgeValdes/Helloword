@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <h1>Formulario parte 2</h1>
+
+        <form method="GET">
+            
+            <button type="submit">Enviar</button>
+            <select name="lenguaje[]" id="">
+            
+            <optgroup label="LENGUAJE DE LA LADO DEL CLIENTE">
+                <option value="html">HTML</option>
+                <option value="javascript">JAVASCRIPT</option>
+                <option value="css">CSS</option>
+            </optgroup>
+           
+            <optgroup label="Lenguaje de lado del servidor">
+                <option value="php">PHP</option>
+                <option value="asp.net">ASP.NET</option>
+                <option value="mysql">MYSQL</option>
+            </optgroup>
+
+        </select>
+
+        <fieldset>
+            <legend>Ciudades</legend>
+            <label for="">Busca una ciudad</label>
+            <input name="ciudad" type="search" list="ciudades">
+            <datalist id="ciudades">
+                <option value="Talca"></option>
+                <option value="Arica"></option>
+                <option value="Curico"></option>
+                <option value="Linares"></option>
+            </datalist>
+        </fieldset>
+
+        <progress value="75" max="100"></progress>
+
+        <fieldset>
+            <legend>Contactenos</legend>
+            <input name="nombre" type="text" placeholder="Su nombre es" required>
+            <button type="submit">Enviar</button>
+        </fieldset>
+        <textarea name=""cols="40"cows="10" maxlength="50"></textarea>
+
+        <output></output>
+
+        </form>
+</body>
+</html>

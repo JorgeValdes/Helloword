@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario numero 1</h1>
+
+    <form method="GET" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre</label>
+            <input name="nombre" id="nombre" type="text">
+            <input name="nombre" id="nombre" type="date">
+            <input name="contraseña" id="pass" type="password">
+            <input type="submit" value="Enviar">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Selecciona algun animal</legend>
+            <label for="">Perro</label>
+            <input name="animal" type="radio" value="perro">
+            <label for="">Gato</label>
+            <input name="animal" type="radio" value="gato">
+            <label for="">Raton</label>
+            <input name="animal" type="radio" value="raton">
+            <label for="">Tortuga</label>
+            <input name="animmal" type="radio" value="tortuga">
+           
+        </fieldset>
+
+        <fieldset>
+            <legend>Selecciona algun intereses</legend>
+            <label for="">Perro</label>
+            <input name="animal2" type="checkbox" value="perro">
+            <label for="">Gato</label>
+            <input name="animal2" type="checkbox" value="gato">
+            <label for="">Raton</label>
+            <input name="animal2" type="checkbox" value="raton">
+            <label for="">Tortuga</label>
+            <input name="animal2" type="checkbox" value="tortuga">
+        </fieldset>
+
+        <fieldset>
+            <input type="range" min="0" max="100" value="25">
+            <input type="search" name="" id="">
+            <label for="">busqueda</label>
+            <input type="week">
+            <input name="color" type="color">
+            <input type="file" multiple>
+
+            <input type="reset" value="resetear">
+        </fieldset>
+    </form>
+</body>
+</html>
