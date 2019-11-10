@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Masonry Layout - Cube Portfolio</title>
+<meta name="description" content="Masonry Layout" />
+<meta name="keywords" content="masonry layout" />
+<!-- load open sans font from google fonts --><link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" type="text/css" />
+<!-- load reset css  - http://meyerweb.com/eric/tools/css/reset/reset.css --><link rel="stylesheet" type="text/css" href="../cbp-plugin/templates/masonry/css/reset.css" />
+<!-- load css for cubeportfolio --><link rel="stylesheet" type="text/css" href="css/cubeportfoliocss.php" />
+<!-- load main css for this page --><link rel="stylesheet" type="text/css" href="../cbp-plugin/templates/masonry/css/main.css" />
+<link rel="stylesheet" type="text/css" href="css/confy.css" />
+<link rel="stylesheet" type="text/css" href="css/helpMode.css" />
+<link rel="stylesheet" type="text/css" href="css/website.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body class="demo-masonry">
+<div class="wb-header">
+	<div class="wb-wrap">
+		<a href="/cubeportfolio/website/index.php?id=1" class="logo">
+			<img src="img/logo.png" alt="Cube Portfolio" /></a>
+		<div class="wb-nav">
+			<a href="javascript:;" title="Toggle navigation" class="stopNav">Toggle navigation</a>
+			<ul>
+<li><a href="/cubeportfolio/website/index.php?q=juicy-projects" class="wb-nav-juicy-projects">Juicy Projects</a></li>
+				<li><a href="/cubeportfolio/website/index.php?q=lightbox-gallery" class="wb-nav-lightbox-gallery">Lightbox Gallery</a></li>
+				<li><a href="/cubeportfolio/website/index.php?q=meet-the-team" class="wb-nav-meet-the-team">Meet the Team</a></li>
+				<li><a href="/cubeportfolio/website/index.php?q=full-screen" class="wb-nav-full-screen">Full Screen</a></li>
+				<li><a href="/cubeportfolio/website/index.php?q=masonry" class="wb-nav-masonry">Masonry</a></li>
+				<li><a href="/cubeportfolio/website/index.php?q=blog-posts" class="wb-nav-blog-posts">Blog Posts</a></li>
+				<li><a href="http://codecanyon.net/item/cube-portfolio-responsive-jquery-grid-plugin/6372959" class="buy-now">Buy Now</a></li>
+			</ul>
+</div>
+	</div>
+</div>
+<div class="wb-title">
+	<div class="wb-center">
+		<h1 id="wb-title-h1">Masonry Layout</h1>
+	</div>
+</div>
+<div class="cfy-wrap">
+    <div class="cfy-section">
+        <div class="cfy-title">
+            <h3 class="helpMode" data-hm-animation="fade" data-hm-direction="br" data-hm-header="" data-hm-body="Defines which animation to use for items that will be shown or hidden after a filter has been activated.&lt;br&gt;The plugin use the best browser features when available (css3 transition and transform, GPU acceleration) and fallback to simple animations (javascript animations) for legacy browsers." data-hm-align="rc-lc" data-hm-addclass="hm-tooltip">Animations for filters</h3>
+        </div>
+        <button class="cfy-item" data-option="animationType" data-type="radio" data-value="fadeOut">Fade Out</button>
+        <button class="cfy-item" data-option="animationType" data-type="radio" data-value="quicksand">Quicksand</button>
+        <button class="cfy-item" data-option="animationType" data-type="radio" data-value="boxShadow">Box Shadow</button>
+        <button class="cfy-item" data-option="animationType" data-type="radio" data-value="bounceLeft">Bounce Left</button>
+        <button class="cfy-item" data-option="animationType" data-type="radio" data-value="bounceTop">Bounce Top</button>
+        <button class="cfy-item" data-option="animationType" data-type="radio" data-value="bounceBottom">Bounce Bottom</button>
+        <button class="cfy-item" data-option="animationType" data-type="radio" data-value="moveLeft">Move Left</button>
+        <button class="cfy-item" data-option="animationType" data-type="radio" data-value="slideLeft">Slide Left</button>
+        <button class="cfy-item" data-option="animationType" data-type="radio" data-value="fadeOutTop">Fade Out Top</button>
+        <button class="cfy-item" data-option="animationType" data-type="radio" data-value="sequentially">Sequentially</button>
+    </div>
+
+    <div class="cfy-section">
+        <div class="cfy-title">
+            <h3 class="helpMode" data-hm-animation="fade" data-hm-direction="br" data-hm-header="" data-hm-body="Adjust the layout grid. Values: &lt;br&gt;- default (no adjustment applied) &lt;br&gt;- alignCenter (align the grid on center of the page) &lt;br&gt;- responsive (use a fluid grid to resize the grid) &lt;br&gt;Don't forget to resize the browser to see the effect of this option." data-hm-align="rc-lc" data-hm-addclass="hm-tooltip">Grid Adjustment</h3>
+        </div>
+        <button class="cfy-item" data-option="gridAdjustment" data-type="radio" data-value="default">Default</button>
+        <button class="cfy-item" data-option="gridAdjustment" data-type="radio" data-value="alignCenter">Align Center</button>
+        <button class="cfy-item" data-option="gridAdjustment" data-type="radio" data-value="responsive">Responsive</button>
+    </div>
+
+    <div class="cfy-section">
+        <div class="cfy-section-textfield">
+            <label>Gap Horizontal</label>
+            <input class="cfy-item helpMode" data-type="textfield" data-option="gapHorizontal" data-value="" data-hm-align="rc-lc" data-hm-addclass="hm-tooltip" data-hm-animation="fade" data-hm-direction="br" data-hm-header="" data-hm-body="Horizontal gap between items. &lt;br&gt;Press [ENTER] key after you add a new value!" />
+</div>
+        <div class="cfy-section-textfield">
+            <label>Gap Vertical</label>
+            <input class="cfy-item helpMode" data-type="textfield" data-option="gapVertical" data-value="" data-hm-align="rc-lc" data-hm-addclass="hm-tooltip" data-hm-animation="fade" data-hm-direction="br" data-hm-header="" data-hm-body="Vertical gap between items. &lt;br&gt;Press [ENTER] key after you add a new value!" />
+</div>
+    </div>
+
+    <div class="cfy-section">
+        <div class="cfy-title">
+            <h3 class="helpMode" data-hm-animation="fade" data-hm-direction="br" data-hm-header="" data-hm-body="Caption - the overlay that is shown when you put the mouse over an item" data-hm-align="rc-lc" data-hm-addclass="hm-tooltip">
+            Caption Effects</h3>
+        </div>
+        <button class="cfy-item" data-option="caption" data-type="radio" data-value="pushTop" title="Push Top">Push Top</button>
+        <button class="cfy-item" data-option="caption" data-type="radio" data-value="revealBottom" title="Rreveal Bottom">Reveal Bottom</button>
+        <button class="cfy-item" data-option="caption" data-type="radio" data-value="moveRight" title="Move Right">Move Right</button>
+        <button class="cfy-item" data-option="caption" data-type="radio" data-value="overlayBottomPush" title="Overlay Bottom Push">Overlay Push</button>
+        <button class="cfy-item" data-option="caption" data-type="radio" data-value="overlayBottom" title="Overlay Bottom">Overlay Bottom</button>
+        <button class="cfy-item" data-option="caption" data-type="radio" data-value="overlayBottomReveal" title="Overlay Bottom Reveal">Overlay Reveal<br /></button>
+        <button class="cfy-item" data-option="caption" data-type="radio" data-value="overlayBottomAlong" title="Overlay Bottom Along">Overlay Along</button>
+        <button class="cfy-item" data-option="caption" data-type="radio" data-value="overlayRightAlong" title="Overlay Right Along">Overlay Right</button>
+        <button class="cfy-item" data-option="caption" data-type="radio" data-value="minimal" title="Minimal">Minimal</button>
+        <button class="cfy-item" data-option="caption" data-type="radio" data-value="fadeIn" title="Fade In">Fade In</button>
+        <button class="cfy-item" data-option="caption" data-type="radio" data-value="zoom" title="Zoom">Zoom</button>
+    </div>
+
+    <div class="cfy-section">
+        <div class="cfy-title">
+            <h3 class="helpMode" data-hm-animation="fade" data-hm-direction="br" data-hm-header="" data-hm-body="The plugin will display his content based on the following values. &lt;br&gt;- default (the content will be displayed as soon as possible) &lt;br&gt;- fadeIn (the content will be displayed with a fadeIn effect) &lt;br&gt; - lazyLoading (the plugin will fully preload the images before displaying the items with a fadeIn effect) &lt;br&gt; - sequentially (the plugin will fully preload the images before displaying the items with a sequentially effect)" data-hm-align="rc-lc" data-hm-addclass="hm-tooltip">
+            Display Type</h3>
+        </div>
+        <button class="cfy-item" data-option="displayType" data-type="radio" data-value="default">Default</button>
+        <button class="cfy-item" data-option="displayType" data-type="radio" data-value="fadeIn">Fade In</button>
+        <button class="cfy-item" data-option="displayType" data-type="radio" data-value="lazyLoading">LazyLoading</button>
+        <button class="cfy-item" data-option="displayType" data-type="radio" data-value="sequentially">Sequentially</button>
+    </div>
+
+    <div class="cfy-section">
+        <div class="cfy-section-textfield">
+            <label>Display Type Speed</label>
+            <input class="cfy-item helpMode dependeciesTypeSpeed" data-type="textfield" data-option="displayTypeSpeed" data-value="" data-hm-align="rc-lc" data-hm-addclass="hm-tooltip" data-hm-animation="fade" data-hm-direction="br" data-hm-header="" data-hm-body="Defines the speed of displaying the items (when displayType == default this option will have no effect). &lt;br&gt;Press [ENTER] key after you add a new value!" />
+</div>
+    </div>   
+
+    <div class="cfy-section">
+        <div class="cfy-title">
+            <h3 class="helpMode" data-hm-animation="fade" data-hm-direction="br" data-hm-header="" data-hm-body="Options for lightbox popup" data-hm-align="rc-lc" data-hm-addclass="hm-tooltip">
+            Lightbox</h3>
+        </div>        
+        <div class="cfy-item cfy-item-checkbox helpMode" data-type="checkbox" data-option="lightboxGallery" data-value="" data-hm-align="rc-lc" data-hm-addclass="hm-tooltip hm-moveLeft" data-hm-animation="fade" data-hm-direction="br" data-hm-header="" data-hm-body="Enable / disable gallery mode for lightbox popup">Gallery</div>
+        <div class="cfy-item cfy-item-checkbox helpMode" data-type="checkbox" data-option="lightboxShowCounter" data-value="" data-hm-align="rc-lc" data-hm-addclass="hm-tooltip hm-moveLeft" data-hm-animation="fade" data-hm-direction="br" data-hm-header="" data-hm-body="Enable / disable the counter (ex: '3 of 5') for lightbox popup">Show Counter</div>
+    </div>  
+
+    <div class="cfy-section">
+        <div class="cfy-title">
+            <h3 class="helpMode" data-hm-animation="fade" data-hm-direction="br" data-hm-header="" data-hm-body="Options for single page details" data-hm-align="rc-lc" data-hm-addclass="hm-tooltip">Single Page</h3>
+        </div>        
+        <div class="cfy-item cfy-item-checkbox helpMode" data-type="checkbox" data-option="singlePageDeeplinking" data-value="" data-hm-animation="fade" data-hm-direction="br" data-hm-header="" data-hm-body="Enable / disable the deeplinking feature for singlePage popup" data-hm-align="rc-lc" data-hm-addclass="hm-tooltip hm-moveLeft">Deeplinking</div>      
+        <div class="cfy-item cfy-item-checkbox helpMode" data-type="checkbox" data-option="singlePageStickyNavigation" data-value="" data-hm-animation="fade" data-hm-direction="br" data-hm-header="" data-hm-body="Enable / disable the sticky navigation for singlePage popup" data-hm-align="rc-lc" data-hm-addclass="hm-tooltip hm-moveLeft">Sticky Navigation</div>
+        <div class="cfy-item cfy-item-checkbox helpMode" data-type="checkbox" data-option="singlePageShowCounter" data-value="" data-hm-align="rc-lc" data-hm-addclass="hm-tooltip hm-moveLeft" data-hm-animation="fade" data-hm-direction="br" data-hm-header="" data-hm-body="Enable / disable the counter (ex: '3 of 5') for singlePage popup">Show Counter</div>
+    </div>     
+            	
+    <div class="cfy-toggle cfy-toggle-close"></div>
+    <a href="" id="clearConfy" class="cfy-clearButton">RESET OPTIONS</a>
+</div>
+        <br /><br /><br /><div class="wrapper">
+
+            <div id="filters-container" class="cbp-l-filters-alignRight">
+                <button data-filter="*" class="cbp-filter-item-active cbp-filter-item">All<div class="cbp-filter-counter"></div></button>
+                <button data-filter=".identity" class="cbp-filter-item">Identity<div class="cbp-filter-counter"></div></button>
+                <button data-filter=".web-design" class="cbp-filter-item">Web Design<div class="cbp-filter-counter"></div></button>
+                <button data-filter=".graphic" class="cbp-filter-item">Graphic<div class="cbp-filter-counter"></div></button>
+            </div>
+                        
+            <div id="grid-container" class="cbp-l-grid-masonry">
+                <ul>
+<li class="cbp-item identity cbp-l-grid-masonry-height2">
+                        <a class="cbp-caption cbp-lightbox" data-title="Easy Note&lt;br&gt;by Cosmin Capitanu" href="img/masonry/1big.jpg">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="img/masonry/1.jpg" alt="" width="100%" />
+</div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-title">Easy Note</div>
+                                        <div class="cbp-l-caption-desc">by Cosmin Capitanu</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="cbp-item web-design cbp-l-grid-masonry-height1">
+                        <a class="cbp-caption cbp-lightbox" data-title="The Gang Blue&lt;br&gt;by Cosmin Capitanu" href="img/masonry/2big.jpg">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="img/masonry/2.jpg" alt="" width="100%" />
+</div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-title">The Gang Blue</div>
+                                        <div class="cbp-l-caption-desc">by Cosmin Capitanu</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="cbp-item graphic identity cbp-l-grid-masonry-height1">
+                        <a class="cbp-caption cbp-lightbox" data-title="Tiger&lt;br&gt;by Cosmin Capitanu" href="https://www.youtube.com/watch?v=3wbvpOIIBQA">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="img/masonry/3.jpg" alt="" width="100%" />
+</div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-title">Tiger</div>
+                                        <div class="cbp-l-caption-desc">by Cosmin Capitanu</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="cbp-item graphic cbp-l-grid-masonry-height2">
+                        <a class="cbp-caption cbp-lightbox" data-title="Flat Roman Typeface Ui&lt;br&gt;by Cosmin Capitanu" href="img/masonry/4big.jpg">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="img/masonry/4.jpg" alt="" width="100%" />
+</div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-title">Flat Roman Typeface Ui</div>
+                                        <div class="cbp-l-caption-desc">by Cosmin Capitanu</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>            
+                    <li class="cbp-item identity cbp-l-grid-masonry-height2">
+                        <a class="cbp-caption cbp-lightbox" data-title="Seemple* Music for iPad&lt;br&gt;by Tiberiu Neamu" href="img/masonry/5big.jpg">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="img/masonry/5.jpg" alt="" width="100%" />
+</div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-title">Seemple* Music for iPad</div>
+                                        <div class="cbp-l-caption-desc">by Tiberiu Neamu</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="cbp-item graphic cbp-l-grid-masonry-height1">
+                        <a class="cbp-caption cbp-lightbox" data-title="Remind~Me More&lt;br&gt;by Tiberiu Neamu" href="img/masonry/6big.jpg">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="img/masonry/6.jpg" alt="" width="100%" />
+</div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-title">Remind~Me More</div>
+                                        <div class="cbp-l-caption-desc">by Tiberiu Neamu</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="cbp-item web-design cbp-l-grid-masonry-height1">
+                        <a class="cbp-caption cbp-lightbox" data-title="Workout Buddy&lt;br&gt;by Tiberiu Neamu" href="img/masonry/7big.jpg">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="img/masonry/7.jpg" alt="" width="100%" />
+</div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-title">Workout Buddy</div>
+                                        <div class="cbp-l-caption-desc">by Tiberiu Neamu</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="cbp-item identity cbp-l-grid-masonry-height1">
+                        <a class="cbp-caption cbp-lightbox" data-title="Volume Knob&lt;br&gt;by Paul Flavius Nechita" href="http://vimeo.com/156783#">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="img/masonry/8.jpg" alt="" width="100%" />
+</div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-title">Volume Knob</div>
+                                        <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="cbp-item identity cbp-l-grid-masonry-height2">
+                        <a class="cbp-caption cbp-lightbox" data-title="Ski * Buddy&lt;br&gt;by Tiberiu Neamu" href="img/masonry/9big.jpg">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="img/masonry/9.jpg" alt="" width="100%" />
+</div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-title">Ski * Buddy</div>
+                                        <div class="cbp-l-caption-desc">by Tiberiu Neamu</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>            
+                    <li class="cbp-item web-design graphic cbp-l-grid-masonry-height1">
+                        <a class="cbp-caption cbp-lightbox" data-title="Virtualization Icon&lt;br&gt;by Paul Flavius Nechita" href="https://www.youtube.com/watch?v=dChhzNGHgnA">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="img/masonry/10.jpg" alt="" width="100%" />
+</div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-title">Virtualization Icon</div>
+                                        <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="cbp-item web-design graphic cbp-l-grid-masonry-height1">
+                        <a class="cbp-caption cbp-lightbox" data-title="World Clock Widget&lt;br&gt;by Paul Flavius Nechita" href="img/masonry/11big.jpg">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="img/masonry/11.jpg" alt="" width="100%" />
+</div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-title">World Clock Widget</div>
+                                        <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="cbp-item web-design graphic cbp-l-grid-masonry-height1">
+                        <a class="cbp-caption cbp-lightbox" data-title="Sickpuppy&lt;br&gt;by Cosmin Capitanu" href="img/masonry/12big.jpg">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="img/masonry/12.jpg" alt="" width="100%" />
+</div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-title">Sickpuppy</div>
+                                        <div class="cbp-l-caption-desc">by Cosmin Capitanu</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+</div>
+        
+        </div>
+
+        <br /><br /><br /><!-- load jquery --><script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script><!-- load cubeportfolio plugin --><script type="text/javascript" src="js/cubeportfoliojs.php"></script><!-- load main js --><script type="text/javascript" src="../cbp-plugin/templates/masonry/js/main.js"></script><script type="text/javascript" src="js/jquery.confy.js"></script><script>(function(e,t,n,r,i,s,o){e["GoogleAnalyticsObject"]=i;e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},e[i].l=1*new Date;s=t.createElement(n),o=t.getElementsByTagName(n)[0];s.async=1;s.src=r;o.parentNode.insertBefore(s,o)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-46357659-1","scriptpie.com");ga("send","pageview")</script><div class="wb-center">
+    <h2 class="wb-features-h2"><span>Main Features</span></h2>
+
+
+    <ul class="wb-features-ul">
+<li class="wb-features-li">
+            <h3 class="wb-features-h3">Responsive Design</h3>
+            <p class="wb-features-p">Cube Portfolio adapts his layout to the viewing device by using a fluid grid. This way you offer a consistent user experiences across all devices.</p>
+        </li>
+        <li class="wb-features-li">
+            <h3 class="wb-features-h3">Fully Customizable</h3>
+            <p class="wb-features-p">You can customize everytingh from grid layout, lightbox style to every possible animation. With just a little HTML, CSS ans JS you can customize the plugin to fulfill your needs.</p>
+        </li>
+        <li class="wb-features-li" style="margin: 0;">
+            <h3 class="wb-features-h3">6  Starter Templates</h3>
+            <p class="wb-features-p">Cube Portfolio includes 6 starter templates: Juicy Project, Lightbox Gallery, Meet the Team, Full Screen Layout, Masonry Layout ans Blog Posts. Choose what is best for you.</p>
+        </li>
+    </ul>
+<ul class="wb-features-ul" style="margin-bottom: 80px;">
+<li class="wb-features-li">
+            <h3 class="wb-features-h3">Captions</h3>
+            <p class="wb-features-p">Cube Portfolio has predefined captions, but it is very simple to add your own HMTL formatted containers inside the entries with your own CSS. You can create captions from almost any static HTML elements.</p>
+        </li>        
+        <li class="wb-features-li">
+            <h3 class="wb-features-h3">CSS3 Animations</h3>
+            <p class="wb-features-p">The plugin use the best browser features when available (CSS3 transition and transform, GPU acceleration) and fallback to simple animations (javascript animations) for legacy browsers.</p>
+        </li>
+        <li class="wb-features-li" style="margin: 0;">
+            <h3 class="wb-features-h3">Premium Support &amp; Updates For Free</h3>
+            <p class="wb-features-p">Connect to our support stuff to get your answers and stay up to date with free updates for life.</p>
+        </li>
+    </ul>
+</div>
+
+<div class="wb-footer">
+    <div>
+        Copyright &copy; 2013 Mihai Buricea | <a href="#" class="buy-now">BUY NOW</a> 
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery.helpMode.js"></script><script type="text/javascript" src="js/jquery.website.js"></script>
+</body>
+</html>

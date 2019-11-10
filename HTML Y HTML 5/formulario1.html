@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+</head>
+<body>
+    <!--Distintos tipos de formularios input y en este caso 
+    el enctype multipart es para el imput el seleccionador de archivos-->
+    <form method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="Nombre">Nombre</label>
+            <input name="nombre" id="Nombre" type="text" autocomplete="off">
+            <input name="contraseña" id="pass"   type="password">
+            <input name="fecha" id="fecha" type="date">
+            <input type="hidden">
+            <input type="submit" value="Enviar"> 
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Selecciona algun animal</legend>
+                <label for="">Perro</label>
+                <input name="animal" type="radio" value="perro">
+                <label for="">Gato</label>
+                <input name="animal" type="radio" value="gato">
+                <label for="">Pato</label>
+                <input name="animal" type="radio" value="pato">
+                <label for="">pollito</label>
+                <input name="animal" type="radio" value="pollito">
+                
+            
+        </fieldset>
+        
+        <fieldset>
+            <legend>Selecciona los animales a gusto</legend>
+            <input type="checkbox">
+            <label for="">Perro</label>
+            <input name="animal2" type="checkbox" value="perro">
+            <label for="">Gato</label>
+            <input name="animal2" type="checkbox" value="gato">
+            <label for="">Pato</label>
+            <input name="animal2" type="checkbox" value="pato">
+            <label for="">pollito</label>
+            <input name="animal2" type="checkbox" value="pollito">
+        </fieldset>
+
+        <fieldset>
+            <input name=""type="range" min="0" max="100" value="25">
+            <input name=""type="search">
+            <input name=""type="tel">
+            <input name=""type="color" disabled>
+            <input name=""type="file"> 
+        </fieldset>
+        
+        <input type="reset" value="resetear">
+        <input type="submit">
+    </form>
+</body>
+</html>

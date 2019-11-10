@@ -1,0 +1,7 @@
+/node_modules/
+/bower_components/
+/.idea/
+test/
+.travis.yml
+.tmp/
+npm-debug.log

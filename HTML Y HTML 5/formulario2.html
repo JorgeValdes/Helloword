@@ -4,39 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    
+    <title>Formulario2</title>
 </head>
 <body>
-        <h1>Formulario parte 2</h1>
-
-        <form method="GET">
-            
-            <button type="submit">Enviar</button>
-            <select name="lenguaje[]" id="">
-            
-            <optgroup label="LENGUAJE DE LA LADO DEL CLIENTE">
+    <form action="">
+        <input type="submit" value="Enviar">
+        <button type="submit">Enviar</button>
+        <select name="lenguaje[]" id=""" multiple>
+            <option value="">Seleccione algun lenguaje</option>
+            <optgroup label="lenguaje del lado del cliente">
                 <option value="html">HTML</option>
                 <option value="javascript">JAVASCRIPT</option>
                 <option value="css">CSS</option>
             </optgroup>
-           
-            <optgroup label="Lenguaje de lado del servidor">
-                <option value="php">PHP</option>
-                <option value="asp.net">ASP.NET</option>
+            <optgroup label="Lenguaje del lado del servidior">
                 <option value="mysql">MYSQL</option>
+                <option value="php">PHP</option>
+                <option value=".net">.NET</option>
             </optgroup>
-
         </select>
 
         <fieldset>
             <legend>Ciudades</legend>
-            <label for="">Busca una ciudad</label>
+            <label for="">Busca una ciudad de chile</label>
             <input name="ciudad" type="search" list="ciudades">
             <datalist id="ciudades">
                 <option value="Talca"></option>
-                <option value="Arica"></option>
                 <option value="Curico"></option>
-                <option value="Linares"></option>
+                <option value="sancle"></option>
             </datalist>
         </fieldset>
 
@@ -44,13 +40,15 @@
 
         <fieldset>
             <legend>Contactenos</legend>
-            <input name="nombre" type="text" placeholder="Su nombre es" required>
+            <input name="nombre" type="text" placeholder="Su nombre.." required>
+            <input name="" type="text"  placeholder="Asunto" required>
+            <input name="" type="text"  placeholder="Telefono" required>
+            <textarea name="" id="" cols="30" maxlength="5" rows="10">Mensajes</textarea>
             <button type="submit">Enviar</button>
         </fieldset>
-        <textarea name=""cols="40"cows="10" maxlength="50"></textarea>
 
-        <output></output>
-
-        </form>
+       
+        
+    </form>
 </body>
 </html>

@@ -3,88 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>portal</title>
-    
-    <meta name="descripcion" content="este html va hacer un curso sencillo el cual lo empezare">
     <meta http-equiv="refresh" content="2">
-    <link rel="stylesheet" href="main.css">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="keywords" content="ventas, tecnologia , por mayor y detal en santa marta">
+    <meta  name="copyright" content="Tecnoventas (c) 2019">
+    <noscript> 
+        <p>tu ordenador no soporta este codigo script</p>
+    </noscript>
+    <!--<script src="codigo.js"> </script>   -->
     
-</head>
-    
-<body>
-    
+ 
 
-      
-        <h1>wena wena</h1>
-        <p>
-            wena como estan todos <br>
-            kasdjaskda
-        </p>
-        <hr style="border: 5px solid blue; width: 55%">
-
-        <p>
-            que pasa con los cabros
-        </p>
-
-        <pre syle="white-space: pre-line">
-            hola soy coke
-        </pre>
-        
-        <blockquote>
-            hola esto es un cosito      
-        
-        </blockquote>
-
-        <ol>
-            <li>wena esto puede ser un listado</li>
-            <li>esto es el 2</li>
-            <li>esto es el 3</li>
-        </ol>
-
-        <ul style="list-style:lover-greek">
-            <li>wena wena</li>
-            <li>kasdjaskda</li>
-        </ul>
-
-        <figure>
-            <center>
-            <img src="data:image/jpeg;base64,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" alt="">
-            <figurecaption>
-                esto es una imagen de la descripcion de una s
-            </figurecaption>
-        </center>
-        </figure>
-
-        <div>
-            <img src="" alt="">
-        </div>
-</body>
-
-<script src="main.js"></script>
-</html>
-
-<!-- HTML QUE ES
-
-    Lenguaje de marcas de hiptertexto -> lenguaje de marcado
-    estructura basica de un proceso de etiquetado de html
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+ 
+    <!--etiquetas link no tiene etiqueta de cierre toda etiqueta en html tiene ettiqueta de cierra menos link de js y las imagenes-->
 </head>
 <body>
+    <nav>
+        <h1>que pasa con los cabros
+
+        </h1>
+    </nav>
+    <section>
+            <aside>
+                <h1>Titulo</h1>
+                <p>jksadjkas</p>
+            </aside>
+
+            <aside>
+                <h1>adkajdas</h1>
+                <p>lsdjasdas
+
+                </p>
+            </aside>
+            
+            <aside>
+                <h1>wena</h1>
+                <h2>wena</h2>
+                <h3>wena</h3>
+                <h4>wena</h4>
+                <h5>wena</h5>
+                
+            </aside>
+    </section>
+   
     
 </body>
 </html>
-
-    <></> signos de etiqueta de apertura y de cierre
-
-    enlace no tiene etiqueetas de cierre link y img
-    
--->

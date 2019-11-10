@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+ #!/usr/bin/env python
 # coding: utf-8
 
 # # Dataframes
@@ -42,8 +42,7 @@ dataframe
 
 
 dataframe.loc[['ventas1','ventas2']]
-
-
+#con lo loc es para las filas y lo demas con columnas 
 # In[25]:
 
 
@@ -113,12 +112,14 @@ dataframe
 
 # In[56]:
 
-
+#elimina un parametro ya sea columna o fila axis =1 para columnas , axis=0 para filas
 dataframe.drop("ventas3", axis=0)
+
+dataframe.drop("ventas3", axis=0, inplace=True) para borrarlo definitivamente
 
 
 # In[ ]:
-
+dataframe.shape(muetra cuentas filas y columnas respectivamente)
 
 
 

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Strict</title>
+    <style>
+
+        h1,h2, h3 , h4 , h5 ,h6, p , span, strong  {
+            font-family: sans-serif;
+        }
+        h1,h2, h3 , h4 , h5 ,h6 {
+            margin: 0;
+            padding: 0;
+        }
+        .bg-1{
+            background-color: #f6f9f9;
+        }
+        .contenedor{
+            width: 1100px;
+            margin: 0 auto;
+        }
+        .c1 {
+            color: #2d3950;
+        }
+        .c2 {
+            color:black;
+        }
+        .caja-servicio{
+            width: 33.333333%;
+            text-align: center;
+            padding: 0 15px;
+            text-align: center;
+        }
+        .caja-servicio img{
+            margin-bottom: 15px;
+        }
+        .caja-servicio h5{
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .fila{
+            
+            display: flex;
+            margin-bottom: 14px;
+        }
+        .caja-galeria{
+            width: 33.33333%;
+            padding: 0 10px;
+        }
+        .caja-galeria img{
+            width: 100%;
+            display: block;
+        }
+        .form-input{
+            width: 100%;
+            padding: 18px 0;
+            background-color: transparent;
+            border: 1px solid #999;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            color: #999;
+
+        }
+        .form-input::placeholder{
+            
+            color: red;
+        }
+        .btn{
+            background-color: transparent;border: 1px
+            solid #15a4fa;padding:  18px 35px;border-radius: 5px; color: white; 
+            font-size: 20px;
+        }
+    </style>
+   
+</head>
+<body style="margin: 0; padding: 0; max-width: 1000px; margin: 0 auto;">
+    
+    <div class="bg-1">
+            <div>
+                    <img style="display: block;" src="logo-strict.png" alt="">
+            </div>
+    </div>
+   
+
+    <header style="background: url(bg-header.jpg); height: 500px; display: flex; justify-content: center; align-items: center;">
+        <div class="info-header" style="width: 640px; text-align: center; background-size: cover;">
+            <h2 style="font-size: 115px; color: white;">STRICT</h2>
+            <hr style="border-color: aqua;">
+            <p style="color: white;">
+                STRICT is a responsitive theme with a clean and minimal  look.
+            </p>
+
+            <div class="btn">
+                    <button class="btn">Call to action</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-1" class="simple" style="padding: 0; margin: 0;">
+        <div class="encabezado" style="text-align: center;margin-bottom: 50px;">
+           <div class="contenedor" style="padding: 100px 0; text-align: center">
+                <h3  class="c1" style="font-size: 40px;">Simple & pure desing</h3>
+                <p class="c2"> 
+                    Designers everywhere gush width admiration upon seeing a web design and exclaim
+                    "its beatiful, it´s so clean! " There are counterless number of webdesing round-ups
+                </p>
+           </div>
+        </div>
+    </section>
+
+    <section class="servicios"  style="padding: 90px 0;">
+
+        <div class="contenedor" style="display: flex;">
+                <div class="caja-servicio" >
+                        <img src="icon-movil.jpg" alt="">
+                        <h5 class="c1">Optimized for all devices</h5>
+                        <span class="c2">STRICT has been designed to be fully responsive on all devices</span>
+                </div>
+                <div class="caja-servicio">
+                            <img src="icon-enviar.jpg" alt="">
+                            <h5 class="c1">Optimized for all devices</h5>
+                            <span class="c2">STRICT has been designed to be fully responsive on all devices</span>
+                </div>
+                <div class="caja-servicio">
+                                <img src="icon-voz.jpg" alt="">
+                                <h5 class="c1">Optimized for all devices</h5>
+                                <span class="c2">STRICT has been designed to be fully responsive on all devices</span>
+                </div>
+        </div>
+    </section>
+
+    <section class="showcase" class="bg-1" style="padding: 90px 0;">
+        <div class="contenedor">
+                <div class="encabezado" style="text-align: center;margin-bottom: 50px;">
+            
+                        <h2 class="c1">Showcase your work like a pro.</h2>
+                        <span class="c2">Contact me if you like my work</span>
+                    </div>
+
+                    <div class="galeria" > 
+                        <div class="fila">
+                                <div class="caja-galeria" >
+                                        <img src="show-1.jpg" alt="">
+                                    </div>
+                                    <div class="caja-galeria">
+                                            <img src="show-2.jpg" alt="">
+                                    </div>
+                                    <div class="caja-galeria">
+                                            <img src="show-3.jpg" alt="">
+                                    </div>
+                        </div>
+                        <div class="fila">
+                                <div class="caja-galeria">
+                                        <img src="show-4.jpg" alt="">
+                                </div>
+                                <div class="caja-galeria">
+                                        <img src="show-5.jpg" alt="">
+                                </div>
+                                <div class="caja-galeria">
+                                        <img src="show-6.jpg" alt="">
+                                </div>
+                        </div>
+                    </div>
+        </div>
+    </section>
+    
+    <section class="stay" style="background: url(bg-stay.jpg); padding: 90px ;">
+        
+        <div class="contenedor">
+                <div class="encabezado" style="text-align: center; margin-bottom: 20px;">
+                        <h2 class="c1" style="font-size: 40px; color: white;">Stay width us</h2>
+                        <span class="c2" color: #999>We ensure quality & support</span>
+                    </div>
+            
+                    <form action="" class="contacto" style="max-width: 600px; margin: 0 auto;">
+                        <input class="form-input" type="text" placeholder="Full name">
+                        <input class="form-input" type="email" placeholder="Email Address">
+                        <textarea class="form-input" name="" id="" class="form-input" cols="30" rows="10" placeholder="Message"></textarea>
+            
+                        <div style="display: flex;">
+                            <div class="check" style="width: 70%;">
+                                <input type="checkbox">
+                                <label for="subs" style="color: white;">Subscribe Newsletter</label>
+                            </div>
+                            <div class="btn" style="width: 30%;">
+                                <button type="button">Send</button>
+                            </div>
+                        </div>
+                    </form>
+        </div>
+    </section>
+
+
+    <footer class="bg-1" style="padding: 90px;">
+        <div class="contenedor" style="display: flex;align-items: center;">
+                <span style="width: 60%;">Copyright 2019 STRIC</span>
+                <div class="redes-sociales" style="width: 40%; text-align: right;">
+                    <a href="#" target="_blank">
+                            <img src="icon-facebook.jpg" alt="">
+                    </a>
+                    <a href="#" target="_blank">
+                            <img src="icon-twitter.jpg" alt="">
+                    </a>
+                    <a href="#" target="_blank">
+                            <img src="icon-google-plus.jpg" alt="">
+                    </a>
+                    <a href="#" target="_blank">
+                            <img src="icon-linked-in.jpg" alt="">
+                    </a>
+                    
+                </div>
+        </div>
+    </footer>
+</body>
+</html>

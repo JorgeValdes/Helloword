@@ -1,0 +1,6 @@
+lenguaje de etiquetas 
+
+
+<> </>
+
+etiqueta head titulo enlacde  documentos
