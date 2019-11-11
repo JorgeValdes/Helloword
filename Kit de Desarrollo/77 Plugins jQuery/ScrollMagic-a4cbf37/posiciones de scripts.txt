@@ -1,7 +1,0 @@
-jquery
-highlight.pack
-modernizr
-velocity  -  tweenMax
-scrollmagic
-animation.velocity   -  animation.gsap
-debug.addIndicators
