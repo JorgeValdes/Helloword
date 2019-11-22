@@ -62,7 +62,7 @@ export interface VersionGroupDetail {
     move_learn_method: Species;
     version_group:     Species;
 }
-
+//TODO : KASDJKADAS ARREGLAR ESTA WEA MAÑANA
 export interface Sprites {
     back_default:       string;
     back_female:        null;
@@ -79,7 +79,6 @@ export interface Stat {
     effort:    number;
     stat:      Species;
 }
-    //TODO : ESTA funcion
 export interface Type {
     slot: number;
     type: Species;

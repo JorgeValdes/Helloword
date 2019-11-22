@@ -1,0 +1,28 @@
+/* es el nombre del elemento en este caso el del titulo */
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: red;
+}
+
+[title] {
+    background-color: aqua;
+
+}
+
+[title="etiqueta1"]{
+    background-color: beige;
+}
+
+[title="etiqueta1 copia 2"]  {
+    background-color: rgb(43, 142, 160);
+}
+
+[title="etiqueta1 copia 3"]{
+    background-color: rgb(229, 255, 0);
+}
+[data-parrafo=parrafo]{
+    background-color: green;
+    font-size: 20px;
+}

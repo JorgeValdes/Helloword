@@ -1,23 +1,19 @@
-/* es una espacio en memoria del ordenador (Ram) donde se almacenara un valor que podra cambiar durate la ejecucion del programa
-los 3 tipos de datos numericos , string , bool
+/*reglas que hay que tener en cuenta antes de declarar una variable 
 
-Reglas para las variables
+*comenzar por una letra , simbolo o guion bajo
+* no se puede empezar nunca por un numero
+* no deben ser palabras reservadas
+*son case sensitive
+*se recomienda que las variables sean descriptivas */
+//iniciadno variables
+var nombre;
+nombre = "gilbert";
 
-*Comenzar por una letra , simbolo o por un guin bajo
-*No se puede empezar nunca por un numero
-*No deben ser palabras reservadas
-*Son case sensitive
-*que sean descriptivas
+var Nombre = "Coke";
 
-*/
-//Iniciando Variables
-
-var nombre1;
-nombre1 = "Jorge";
-
+// iniciando varias variables
 var nombre, apellido , edad;
-var nombre = "jorgito", apellido="valdes", edad = 24;
 
-alert(nombre);
+var name = "coke", apellido = "valdes", edad= 24;
+
 alert(apellido);
-alert(edad);

@@ -1,0 +1,36 @@
+/* Selectores e id para las clases de html y css */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* background: aquamarines; */
+}
+
+#navegacion {
+    height: 50px;
+    background: rgb(156, 149, 56);   
+}
+
+#slider{
+    height: 50px;
+    background-color: aqua;
+}
+
+#servicios {
+    height: 120px;
+    background-color: azure;
+
+}
+
+#pie {
+    height: 50px;
+    background: bisque;
+}
+.servicios {
+    width: 100px;
+    height: 100px;
+    background: crimson;
+    border-radius: 50%;
+    display: inline-block;
+
+}

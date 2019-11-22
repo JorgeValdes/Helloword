@@ -1,0 +1,42 @@
+/* Selector de hijos en css para las nuevas
+    Selectore de hermanos adyacentes
+    Selector de hermano general 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+
+.otro_contenido > p {
+
+    background-color: white;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.otro_contenido > span{
+    padding: 10px;
+}
+.a > strong {
+    color: purple;
+    background-color: black;
+    padding: 10px;
+}
+
+p > span {
+    color: red;
+    font-size: 20px;
+    background-color: yellowgreen;
+}
+/* conceptos de hermanos adyacentes */
+h3 + a{
+    font-size: 25px;
+    
+}
+
+.otro_contenido + p {
+    background-color: crimson;
+    color: aliceblue;
+}
