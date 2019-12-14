@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manejadora de eventos</title>
+    <style>
+        
+        button{
+            background-color: red;
+            padding: 0;
+            margin: 0 auto;
+        }
+        section {
+            width: 500px;
+            height: 500px;
+            background-color: blue;
+        }
+        button{
+            height: 50px;
+            width: 420px;
+        }
+    </style>
+
+</head>
+<body >
+    
+    <center>
+        <section style="border: 2px solid black" onmouseover="resalta(this)" onmouseout="resalta(this)">
+    
+            <button onclick="presioname()">presioname</button>
+    
+        </section>
+    
+        <script>
+            
+            // function presioname(){
+    
+            //     alert("me has presionado!");
+            // }
+            // pasar como parametro
+
+            function resalta(elemento){
+                switch(elemento.style.borderColor){
+                    case 'black':
+                        elemento.style.backgroundColor = 'black';
+                        elemento.style.borderColor = 'white';
+                        break;
+                    
+                    case 'white':
+                        elemento.style.backgroundColor = 'white';
+                        elemento.style.borderColor = 'black';
+                        break;
+                }
+            }
+        </script>
+    </center>
+</body>
+</html>
