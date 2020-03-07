@@ -1,4 +1,4 @@
-import { SuperHeroe as Heroe } from './extra/classes';
+import { Heroe as Heroe } from './extra/classes';
 
 /*
     Objetivo:

@@ -1,0 +1,29 @@
+movimientos alt + teclas de movimientos
+movimientos shift + mayus
+comentarios ctrl + 7
+comentarios de una sola linea ctrl + shift + a
+borrar lineas ctrl + shift + l selecciona muticursor
+borrar lineas ctrl + shift + k
+emmet wrap ctrl + k configurarlo    
+copiar ctrl + i configurarlo
+
+multicursosr ctrl + alt + arriba
+multicursosr ctrl + alt + shift + alt me voy al final
+
+mayuscula selecciono todo ctrl + shift + l
+minuscucla selecciono tdo ctrl + shift + u
+
+capitalizar seleccionar varios doble click + alt
+
+arreglos para realizar un arreglo lista seleccionar con multicursor luego coma y borrar
+
+'lunes'
+'martes' 
+'miercoles'
+'jueves'
+'viernes'
+'sabado'
+'domingo'
+
+ir a una linea 
+ctrl + g

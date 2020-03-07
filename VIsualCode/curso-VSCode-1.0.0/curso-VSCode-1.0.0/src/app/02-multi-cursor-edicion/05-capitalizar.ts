@@ -30,11 +30,11 @@ function capitalizados() {
 
 function minusculas() {
 
-    const HULK       = 'brouce banner';
-    const HAWKEYE    = 'cinton francis';
-    const IRONMAN    = 'tony stark';
-    const SPIDERMAN  = 'peter parker';
-    const VIUDANEGRA = 'natalia romanova';
+    const HULK       = 'Brouce banner';
+    const HAWKEYE    = 'Cinton francis';
+    const IRONMAN    = 'Tony stark';
+    const SPIDERMAN  = 'Peter parker';
+    const VIUDANEGRA = 'Natalia romanova';
 
 }
 
@@ -44,21 +44,21 @@ function minusculas() {
 
 function capitalizadosDemo() {
 
-    const hulk       = 'Brouce Banner';
-    const Hawkeye    = 'Cinton Francis';
-    const ironman    = 'Tony Stark';
-    const spiderman  = 'Peter Parker';
-    const viudaNegra = 'Natalia Romanova';
+    const hulk       = 'BROUCE BANNER';
+    const Hawkeye    = 'CINTON FRANCIS';
+    const ironman    = 'TONY STARK';
+    const spiderman  = 'PETER PARKER';
+    const viudaNegra = 'NATALIA ROMANOVA';
 
 }
 
 function minusculasDemo() {
 
-    const hulk       = 'brouce banner';
-    const hawkeye    = 'cinton francis';
-    const ironman    = 'tony stark';
-    const spiderman  = 'peter parker';
-    const viudanegra = 'natalia romanova';
+    const HULK       = 'brouce banner';
+    const HAWKEYE    = 'cinton francis';
+    const IRONMAN    = 'tony stark';
+    const SPIDERMAN  = 'peter parker';
+    const VIUDANEGRA = 'natalia romanova';
 
 }
 
